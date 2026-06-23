@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoveSlots Robot Prototype | Leonardo Bragantini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <h1>MoveSlots Robot Prototype</h1>
+    <p>AI-driven warehouse automation concept with a working robotic prototype</p>
+  </header>
+
+  <main class="container">
+    <p><a href="index.html">← Back to projects</a></p>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This robot was created as part of a university group project for the Bocconi University course
+        <strong>“Building and Scaling a Tech Based Startup.”</strong>
+      </p>
+
+      <p>
+        The group work focused on designing an innovative startup. In the attached files, you can find
+        the paper we submitted and the presentation used for the final pitch. During the pitch, I presented
+        to the professors and the two classes the part related to the idea and the technology behind our project.
+        I also had the opportunity to show this working prototype, which I built.
+      </p>
+
+      <p>
+        <em>See the YouTube video at the bottom of this page to watch the robot at work.</em>
+      </p>
+    </section>
+
+    <section>
+      <h2>Prototype Gallery</h2>
+
+      <div class="image-carousel">
+        <img src="images/MoveSlot_prototype_1.png" alt="MoveSlots robot prototype image 1">
+        <img src="images/MoveSlot_prototype_2.png" alt="MoveSlots robot prototype image 2">
+        <img src="images/MoveSlot_prototype_3.png" alt="MoveSlots robot prototype image 3">
+      </div>
+    </section>
+
+    <section>
+      <h2>Startup Overview</h2>
+      <p>
+        MoveSlots is a startup concept that provides an AI-driven high-density storage system for small
+        and medium urban warehouses.
+      </p>
+
+      <p>
+        The system is designed to make warehouse storage more efficient by reducing the need for fixed aisles
+        and by using the available space in a smarter way.
+      </p>
+
+      <p>MoveSlots combines:</p>
+
+      <ul>
+        <li>Autonomous ground robots</li>
+        <li>Multi-layered pallets</li>
+        <li>A digital inventory control interface</li>
+        <li>AI-based warehouse configuration and movement optimization</li>
+      </ul>
+
+      <p>
+        The goal is to help warehouses store more goods in the same space, retrieve products faster,
+        and manage inventory with better accuracy.
+      </p>
+    </section>
+
+    <section>
+      <h2>Role of the Robots</h2>
+      <p>
+        The robots are the physical part of the MoveSlots system.
+      </p>
+
+      <p>
+        Their function is to move under pallets, lift them, and transport them to the correct position
+        inside the warehouse. They can also bring a specific pallet to an exit or picking area when requested
+        by the user through the digital system.
+      </p>
+
+      <p>
+        In the full MoveSlots concept, the robots would work together with the software platform.
+        The AI would decide which pallet should be moved, where it should be stored, and which robot
+        should perform the task.
+      </p>
+    </section>
+
+    <section>
+      <h2>Prototype Description</h2>
+      <p>
+        My prototype was built using Lego Technic components, Arduino, and 3D-printed parts that allow
+        the different components to be integrated together.
+      </p>
+
+      <p>The main components are:</p>
+
+      <ul>
+        <li>Lego Technic frame</li>
+        <li>Wheels and motors for movement</li>
+        <li>Mobile lifting platform</li>
+        <li>Arduino board for control</li>
+        <li>Infrared receiver and remote control</li>
+        <li>Two ultrasonic distance sensors</li>
+        <li>3D-printed connectors and supports</li>
+        <li>TB6612FNG motor controller</li>
+        <li>Three LEDs indicating the state of the robot</li>
+        <li>External battery pack</li>
+        <li>Power bank to provide stable current to the Arduino</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Control Modes</h2>
+
+      <h3>Manual Mode</h3>
+      <p>
+        In manual mode, the robot is controlled using an infrared remote control.
+        The user can move the robot forward and backward, and can also activate the lifting platform.
+      </p>
+
+      <h3>Autonomous Mode</h3>
+      <p>
+        In autonomous mode, the robot can move by itself under a pallet.
+      </p>
+
+      <p>
+        The robot identifies the correct position under the pallet, lifts it using the mobile platform,
+        and moves it toward the destination selected by the user.
+      </p>
+    </section>
+
+    <section>
+      <h2>Pallet Detection System</h2>
+      <p>
+        To identify the position of the pallet, the prototype uses two ultrasonic sensors.
+      </p>
+
+      <p>
+        These sensors measure distance. When both sensors detect that the robot is correctly positioned
+        under the pallet, they send a signal to the Arduino. The Arduino then activates the lifting mechanism.
+      </p>
+
+      <p>
+        This allows the robot to understand when it is aligned with the pallet and ready to lift it.
+      </p>
+    </section>
+
+    <section>
+      <h2>Power Supply</h2>
+      <p>
+        The robot is powered by an external battery pack for the motors and by a power bank that provides
+        stable current to the Arduino.
+      </p>
+    </section>
+
+    <section>
+      <h2>Purpose of the Prototype</h2>
+      <p>
+        The prototype was created to demonstrate the basic logic behind the MoveSlots robotic system.
+      </p>
+
+      <p>
+        It shows how a small autonomous ground robot could move under a pallet, detect its position,
+        lift it, and transport it. Even though it is a simplified version, it represents the core idea
+        of the MoveSlots technology.
+      </p>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <p>
+        YouTube video coming soon.
+      </p>
+
+      <!-- Quando hai il link YouTube, sostituisci VIDEO_ID con l'ID del video -->
+      <!--
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="MoveSlots Robot Prototype Video"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+      -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Bragantini</p>
+  </footer>
+</body>
+</html>
