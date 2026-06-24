@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFirstRobot | Leonardo Bragantini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <h1>MyFirstRobot</h1>
+    <p>My very first robot — an honorable mention in my robotics journey</p>
+  </header>
+
+  <main class="container">
+    <p><a href="index.html">← Back to projects</a></p>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        MyFirstRobot was my very first robot. I decided to include it on this website as an
+        <strong>honorable mention</strong>, not because it is technically advanced or especially interesting,
+        but because it represents the starting point of my robotics journey.
+      </p>
+
+      <p>
+        It is a simple autonomous robot designed to move around randomly and react when it detects
+        obstacles in front of it.
+      </p>
+    </section>
+
+    <section>
+      <h2>Image</h2>
+
+      <img 
+        src="images/MyFirstRobot.png" 
+        alt="MyFirstRobot autonomous obstacle avoidance robot" 
+        class="project-image"
+      >
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+      <p>
+        The robot moves in a random direction until the ultrasonic sensor detects an obstacle.
+        When an obstacle is detected, the robot moves backward, rotates on itself, and then continues
+        in a new direction.
+      </p>
+
+      <p>
+        The ultrasonic sensor is mounted on a servo motor, allowing it to measure distance in different
+        directions instead of only looking straight ahead. This gives the robot a basic ability to scan
+        its surroundings before choosing where to move next.
+      </p>
+    </section>
+
+    <section>
+      <h2>Main Components</h2>
+      <ul>
+        <li>Ultrasonic distance sensor</li>
+        <li>Servo motor for sensor rotation</li>
+        <li>DC motors for movement</li>
+        <li>Microcontroller-based control system</li>
+        <li>Basic obstacle avoidance logic</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why It Matters</h2>
+      <p>
+        Even though the robot is very simple, it was important because it helped me understand the basic
+        logic of autonomous movement: reading sensor data, reacting to obstacles, controlling motors,
+        and creating a first form of robot behavior.
+      </p>
+
+      <p>
+        For this reason, MyFirstRobot deserves a place here as the first step that led to more advanced
+        robotics projects.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Bragantini</p>
+  </footer>
+</body>
+</html>
