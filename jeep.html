@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeep | Leonardo Bragantini</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Jeep</h1>
+    <p>Wi-Fi controlled ESP32 rover with onboard camera</p>
+  </header>
+
+  <main class="container">
+    <p><a href="index.html">← Back to projects</a></p>
+
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        Jeep is an ongoing robotics project based on an old toy that I modified and repurposed
+        using an <strong>ESP32 WROVER Module</strong>.
+      </p>
+
+      <p>
+        The goal of this project is to transform a simple toy vehicle into a Wi-Fi controlled rover
+        with steering, traction control, and a live onboard camera view.
+      </p>
+    </section>
+
+    <section>
+      <h2>Image</h2>
+
+      <img 
+        src="images/Jeep.png" 
+        alt="Jeep ESP32 Wi-Fi controlled rover with onboard camera" 
+        class="project-image"
+      >
+    </section>
+
+    <section>
+      <h2>Control System</h2>
+      <p>
+        The Jeep is controlled through a local web interface created by the ESP32. By connecting to
+        the ESP32 over Wi-Fi, I can access a local webpage that works as a remote controller for the vehicle.
+      </p>
+
+      <p>
+        From this interface, I can control both steering and traction. These functions are managed through
+        a <strong>TB6612FNG motor driver</strong>, which controls the motors responsible for movement and direction.
+      </p>
+    </section>
+
+    <section>
+      <h2>Camera System</h2>
+      <p>
+        A second local webpage is used to display the live video stream from the onboard camera.
+        The camera is positioned in the driver’s seat area, making the experience more realistic and giving
+        the impression of seeing the environment from inside the Jeep.
+      </p>
+    </section>
+
+    <section>
+      <h2>Main Components</h2>
+      <ul>
+        <li>Repurposed toy Jeep body</li>
+        <li>ESP32 WROVER Module</li>
+        <li>TB6612FNG motor driver</li>
+        <li>Wi-Fi based local control webpage</li>
+        <li>Second local webpage for live camera view</li>
+        <li>Onboard camera positioned in the driver’s seat area</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Current Development</h2>
+      <p>
+        This project is still in progress. The next step is to make the camera rotate using a servo motor,
+        so that the user can look around remotely while driving the Jeep.
+      </p>
+
+      <p>
+        This would make the system more interactive and would improve the realism of the onboard driving
+        experience.
+      </p>
+    </section>
+
+    <section>
+      <h2>What I Am Learning</h2>
+      <p>
+        Through this project, I am experimenting with ESP32-based robotics, Wi-Fi control interfaces,
+        motor driver integration, and live camera streaming. It is also a good example of how old objects
+        can be reused and transformed into functional robotic prototypes.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Bragantini</p>
+  </footer>
+</body>
+</html>
